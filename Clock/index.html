@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Theme Clock</title>
+    </head>
+    <body>
+        <header>
+            <form id="form">
+                <input type="text", id="search" class="search" placeholder="Search">
+            </form>
+        </header>
+        <button class="toggle">Dark Mode</button>
+
+        <div class="clock-container">
+            <div class="clock">
+                <div class="needle hour"></div>
+                <div class="needle minute"></div>
+                <div class="needle second"></div>
+                <div class="center-point"></div>
+            </div>
+
+            <div class="time"></div>
+            <div class="date"></div>
+        </div>
+
+        <div class="current-info">
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                <div id="country" class="country">IN</div>
+            </div>
+        </div>
+        
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src = "script.js"></script>
+    </body>
+</html>
